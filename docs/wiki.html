@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wiki Operacional</title>
+</head>
+<body>
+
+<h1>Wiki Operacional do Sistema</h1>
+
+<h2>Objetivo</h2>
+<p>
+Este documento descreve regras, fluxos e responsabilidades dos agentes do sistema.
+Seu conteúdo é derivado do arquivo <strong>wiki.xml</strong>.
+</p>
+
+<h2>Agente: Integrações</h2>
+
+<h3>Responsabilidades</h3>
+<ul>
+  <li>Validar contratos de API REST</li>
+  <li>Garantir versionamento correto</li>
+  <li>Monitorar falhas de integração</li>
+</ul>
+
+<h3>Limitações</h3>
+<ul>
+  <li>Não alterar dados em produção</li>
+  <li>Não responder fora do escopo de integrações</li>
+</ul>
+
+<h2>Fluxo de Validação</h2>
+<ol>
+  <li>Receber requisição</li>
+  <li>Validar schema</li>
+  <li>Executar testes</li>
+  <li>Responder resultado</li>
+</ol>
+
+<h2>Erros Comuns</h2>
+<ul>
+  <li>Token expirado</li>
+  <li>Endpoint incorreto</li>
+</ul>
+
+</body>
+</html>
